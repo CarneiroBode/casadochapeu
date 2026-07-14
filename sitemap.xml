@@ -1,26 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
   <url>
     <loc>https://www.casadochapeucaparao.com/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+
     <image:image>
       <image:loc>https://www.casadochapeucaparao.com/assets/images/hero-entrada-cabana-lua-1920.webp</image:loc>
       <image:title>Entrada da Cabana Lua — Casa do Chapéu Caparaó</image:title>
+      <image:caption>Cabanas de tijolo ecológico cercadas de verde, aos pés do Parque Nacional do Caparaó</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.casadochapeucaparao.com/assets/images/quarto-cabana-teto-madeira-1600.webp</image:loc>
-      <image:title>Interior da Cabana Estrela com teto de madeira</image:title>
+      <image:title>Interior da Cabana Estrela com teto de madeira octogonal</image:title>
+      <image:caption>Cama de casal com vista para o jardim, ar-condicionado e aquecedor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/quarto-cabana-cama-casal-1600.webp</image:loc>
+      <image:title>Interior da Cabana Lua com paredes de tijolo ecológico</image:title>
+      <image:caption>Cama de casal com colcha de crochê e banheiro privativo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/banheira-externa-1600.webp</image:loc>
+      <image:title>Banheira vitoriana da Cabana Estrela a céu aberto</image:title>
+      <image:caption>Água aquecida, espaço reservado entre paredes de tijolo ecológico e ladrilhos decorados</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/cozinha-fogao-a-lenha-1600.webp</image:loc>
+      <image:title>Copa e cozinha da Cabana Lua com fogão a lenha</image:title>
+      <image:caption>Mesa para seis lugares, fogão por indução e forno elétrico</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/banner-jardim-jabuticabeira-cabanas-2206.webp</image:loc>
+      <image:title>Jardim com jabuticabeira e as Cabanas Lua e Estrela</image:title>
+      <image:caption>Fogueira no quintal, gramado e árvores frutíferas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/quintal-fogueira-noite-560.webp</image:loc>
+      <image:title>Fogueira no quintal à noite com lua cheia</image:title>
+      <image:caption>Noites de céu estrelado ao redor do fogo</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.casadochapeucaparao.com/assets/images/cachoeira-da-purificacao-1200.webp</image:loc>
       <image:title>Cachoeira da Purificação em Patrimônio da Penha</image:title>
+      <image:caption>Queda d'água volumosa cercada de mata nativa, a 250 m da hospedagem</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/trilha-cachoeira-1200.webp</image:loc>
+      <image:title>Trilha ecológica com poço natural em Patrimônio da Penha</image:title>
+      <image:caption>Caminhos sombreados em meio à mata nativa até as cachoeiras</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.casadochapeucaparao.com/assets/images/pico-da-bandeira-1024.webp</image:loc>
       <image:title>Pico da Bandeira — Parque Nacional do Caparaó</image:title>
+      <image:caption>Nascer do sol acima das nuvens a 2.892 metros de altitude</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/banner-pergolado-balanco-quintal-2400.webp</image:loc>
+      <image:title>Pergolado de madeira com balanço no quintal</image:title>
+      <image:caption>Espaço de descanso entre árvores e jardim</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/og-image-1200x630.webp</image:loc>
+      <image:title>Casa do Chapéu Caparaó — Hospedagem Sustentável</image:title>
+      <image:caption>Cabanas ecológicas aos pés do Parque Nacional do Caparaó</image:caption>
+    </image:image>
+
+    <geo:geo>
+      <geo:format>kml</geo:format>
+    </geo:geo>
   </url>
 </urlset>

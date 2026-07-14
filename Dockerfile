@@ -7,7 +7,7 @@ RUN apk add --no-cache curl
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --chown=nginx:nginx index.html robots.txt sitemap.xml site.webmanifest /usr/share/nginx/html/
+COPY --chown=nginx:nginx index.html robots.txt sitemap.xml site.webmanifest llms.txt /usr/share/nginx/html/
 COPY --chown=nginx:nginx assets/ /usr/share/nginx/html/assets/
 COPY --chown=nginx:nginx styles/ /usr/share/nginx/html/styles/
 COPY --chown=nginx:nginx lib/   /usr/share/nginx/html/lib/
