@@ -1,0 +1,17 @@
+{
+  "name": "Casa do Chapéu Caparaó",
+  "short_name": "Casa do Chapéu",
+  "description": "Cabanas sustentáveis em Patrimônio da Penha, aos pés do Parque Nacional do Caparaó.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#faf6ee",
+  "theme_color": "#22362b",
+  "icons": [
+    {
+      "src": "assets/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
