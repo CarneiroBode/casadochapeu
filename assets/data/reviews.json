@@ -1,0 +1,37 @@
+{
+  "rating": 5.0,
+  "total": 10,
+  "url": "https://search.google.com/local/reviews?placeid=ChIJKY4kGO-juwARScvIFzKcThQ",
+  "reviews": [
+    {
+      "name": "Samyra Gomes",
+      "date": "2026-06",
+      "rating": 5,
+      "text": "A hospedagem é perfeita! Além de linda, estava limpa e cheirosa. A localização é a melhor possível, a poucos metros tanto da rua principal da vila quanto da guarita das cachoeiras."
+    },
+    {
+      "name": "Lina Chagas",
+      "date": "2026-01",
+      "rating": 5,
+      "text": "A casa e a ótima localização eram exatamente como na descrição. A Bárbara foi uma ótima anfitriã, sempre solícita e empenhada em nos proporcionar a melhor experiência. Na próxima oportunidade em Patrimônio da Penha, certamente optarei pela Casa do Chapéu. Recomendo a outros hóspedes."
+    },
+    {
+      "name": "Bruno Carneiro",
+      "date": "2026-01",
+      "rating": 4,
+      "text": "Excelente cabana para hospedagem, tudo bem organizado e confortável para descanso e aproveitar da beleza da natureza em Patrimônio da Penha."
+    },
+    {
+      "name": "Larissa Macedo",
+      "date": "2025-11",
+      "rating": 5,
+      "text": "Dias incríveis na hospedagem da Bárbara. Ficamos hospedados na casa Lua. O quarto era bem espaçoso, cama confortável, tudo limpo e organizado. A área externa era uma delícia, com um pé de jabuticaba recheado."
+    },
+    {
+      "name": "Sarad Elizabeth",
+      "date": "2025-07",
+      "rating": 5,
+      "text": "Os anfitriões Judson e Bárbara me receberam muito bem, deram várias dicas de passeios. A hospedagem foi maravilhosa, super aconchegante, tudo muito lindo e limpo. A banheira maravilhosa, super diferente. Me senti renovada e energizada na Casa do Chapéu. Super indico!"
+    }
+  ]
+}

@@ -679,11 +679,34 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 .reviews .section-head :is(h2) { color: #f6f1e4; }
 .reviews .section-head p { color: rgb(236 231 218 / .75); }
 .reviews .eyebrow { color: var(--amber); }
-.review-grid {
-  display: grid; gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+/* Resumo Google */
+.g-summary {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 1.25rem 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: rgb(255 255 255 / .06);
+  border: 1px solid rgb(255 255 255 / .14);
+  border-radius: var(--radius);
 }
-@media (max-width: 56em) { .review-grid { grid-template-columns: 1fr; } }
+.g-logo { background: #fff; border-radius: 50%; padding: .45rem; width: 52px; height: 52px; flex: none; }
+.g-score { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; justify-content: center; }
+.g-score strong { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; color: #f6f1e4; line-height: 1; }
+.g-stars { display: flex; gap: .15rem; color: var(--amber); }
+.g-score > span { font-size: .95rem; color: rgb(236 231 218 / .75); }
+
+.review-grid {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 1.5rem;
+}
+.review-grid .review-card { flex: 1 1 20rem; max-width: 24rem; }
+@media (max-width: 56em) { .review-grid .review-card { flex-basis: 100%; max-width: none; } }
+.review-head { display: flex; align-items: center; gap: .8rem; }
+.review-head .g-mini { margin-left: auto; flex: none; }
+.review-meta strong { display: block; font-size: .95rem; }
+.review-meta span { font-size: .8rem; color: rgb(236 231 218 / .6); }
+.g-noscript { text-align: center; color: rgb(236 231 218 / .85); }
+.g-noscript a { color: var(--amber); }
 .review-card {
   display: flex; flex-direction: column; gap: 1.1rem;
   padding: 1.9rem 1.7rem;
@@ -698,18 +721,15 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   font-size: .98rem; line-height: 1.65;
   color: rgb(236 231 218 / .92);
 }
-.review-meta { margin-top: auto; display: flex; align-items: center; gap: .8rem; }
 .review-avatar {
   width: 2.75rem; height: 2.75rem;
   border-radius: 50%;
   display: grid; place-items: center;
   background: var(--amber); color: var(--forest-deep);
   font-weight: 700; font-size: 1.05rem;
+  flex: none;
 }
-.review-meta strong { display: block; font-size: .95rem; }
-.review-meta span { font-size: .8rem; color: rgb(236 231 218 / .6); }
-.reviews-cta { margin-top: 2.75rem; text-align: center; }
-.reviews-cta .btn-ghost { border-color: rgb(255 255 255 / .35); }
+.reviews .btn-ghost { border-color: rgb(255 255 255 / .35); }
 
 /* ---------- FAQ ---------- */
 .faq-list { max-width: 46rem; margin-inline: auto; display: grid; gap: .9rem; }
