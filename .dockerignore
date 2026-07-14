@@ -1,7 +1,12 @@
 .git
 .gitignore
-.claude
-README.md
-Dockerfile
 .dockerignore
+Dockerfile
+nginx.conf
+README.md
+.claude
+node_modules/
+.vscode/
+*.md
+.env*
 *.log
