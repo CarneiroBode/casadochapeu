@@ -1,12 +1,14 @@
+# NÃO ignore nginx.conf nem os assets — o Dockerfile os copia para a imagem.
 .git
 .gitignore
 .dockerignore
 Dockerfile
-nginx.conf
-README.md
 .claude
-node_modules/
 .vscode/
-*.md
+node_modules/
+README.md
+MIGRACAO-SEO.md
+llms.txt.original.md
 .env*
 *.log
+test-*.html
