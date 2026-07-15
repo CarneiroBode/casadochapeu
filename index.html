@@ -54,8 +54,8 @@
   <script>
     (() => {
       const saved = localStorage.getItem('cdc-theme');
-      const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-      if (dark) document.documentElement.dataset.theme = 'dark';
+      const dark = saved ? saved === 'dark' : true;
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
     })();
   </script>
 
