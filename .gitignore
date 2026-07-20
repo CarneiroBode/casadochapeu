@@ -3,3 +3,8 @@ node_modules/
 .DS_Store
 Thumbs.db
 test-*.html
+
+# Fotos originais em alta (fonte das versoes .webp otimizadas do site)
+assets/images/estrela/
+assets/images/lua/
+assets/images/externas/

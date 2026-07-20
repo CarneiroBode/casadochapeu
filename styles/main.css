@@ -479,10 +479,9 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   border-radius: var(--radius-sm);
   display: block;
 }
-.gallery a:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.gallery a:nth-child(4) { grid-row: span 2; }
-.gallery a:nth-child(5) { grid-row: span 2; }
-.gallery a:nth-child(6) { grid-column: span 2; }
+.gallery a[data-span="big"]  { grid-column: span 2; grid-row: span 2; }
+.gallery a[data-span="tall"] { grid-row: span 2; }
+.gallery a[data-span="wide"] { grid-column: span 2; }
 .gallery img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .7s var(--ease-out), filter .7s ease;
