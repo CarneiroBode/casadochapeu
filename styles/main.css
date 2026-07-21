@@ -266,16 +266,20 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 
 @media (max-width: 56em) {
   .primary-nav {
-    position: fixed; inset: 0; z-index: -1;
+    /* O header vira containing block quando .scrolled aplica backdrop-filter,
+       entao usamos altura de viewport explicita em vez de inset:0 (que
+       amarraria o bottom ao header e deixaria o painel com so ~65px). */
+    position: fixed; top: 0; left: 0; width: 100%; height: 100dvh; z-index: 1;
     display: grid; place-content: center;
-    background: color-mix(in srgb, var(--bg) 96%, transparent);
-    backdrop-filter: blur(18px);
+    background: var(--bg);
     opacity: 0; visibility: hidden;
     transition: opacity .3s ease, visibility .3s ease;
   }
   .primary-nav ul { flex-direction: column; text-align: center; gap: .5rem; }
   .primary-nav a { font-size: 1.35rem; font-family: var(--font-display); color: var(--heading); }
   .site-header.nav-open .primary-nav { opacity: 1; visibility: visible; }
+  /* botao de fechar e acoes acima do painel, dentro do header */
+  .header-actions { position: relative; z-index: 2; }
   .nav-toggle { display: inline-flex; }
   .site-header.nav-open :is(.brand-name, .nav-toggle, .theme-toggle) { color: var(--heading); }
   .header-actions .btn-whatsapp span {
