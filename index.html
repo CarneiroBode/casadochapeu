@@ -98,7 +98,9 @@
       { "@type": "LocationFeatureSpecification", "name": "Aquecedor elétrico", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Fogueira no quintal", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Energia solar", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Aceita animais de estimação", "value": true }
+      { "@type": "LocationFeatureSpecification", "name": "Aceita animais de estimação", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Geladeira e micro-ondas nas duas cabanas", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cafeteira, liquidificador e sanduicheira nas duas cabanas", "value": true }
     ],
     "petsAllowed": true,
     "containsPlace": [
@@ -192,7 +194,7 @@
       {
         "@type": "Question",
         "name": "O que as cabanas oferecem?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A Cabana Lua recebe até 6 pessoas e tem cozinha completa com fogão por indução, forno elétrico e copa/cozinha com mesa para seis lugares. A Cabana Estrela recebe até 4 pessoas e tem cozinha equipada com fogão a gás de duas bocas e utensílios, sem forno, e banheira vitoriana de água aquecida em espaço reservado a céu aberto. Ambas são de tijolos ecológicos, com ar-condicionado, aquecedor elétrico, camas muito confortáveis, torneiras aquecidas, Wi-Fi e estacionamento. No quintal há fogueira, jardim e árvores frutíferas." }
+        "acceptedAnswer": { "@type": "Answer", "text": "A Cabana Lua recebe até 6 pessoas e tem cozinha completa com fogão por indução, forno elétrico e copa/cozinha com mesa para seis lugares. A Cabana Estrela recebe até 4 pessoas e tem cozinha equipada com fogão a gás de duas bocas e utensílios, sem forno, e banheira vitoriana de água aquecida em espaço reservado a céu aberto. As duas têm geladeira, micro-ondas, cafeteira, liquidificador e sanduicheira. Ambas são de tijolos ecológicos, com ar-condicionado, aquecedor elétrico, camas muito confortáveis, torneiras aquecidas, Wi-Fi e estacionamento. No quintal há fogueira, jardim e árvores frutíferas." }
       },
       {
         "@type": "Question",
@@ -462,6 +464,8 @@
                 <li>Cozinha completa</li>
                 <li>Fogão por indução</li>
                 <li>Forno elétrico</li>
+                <li>Geladeira e micro-ondas</li>
+                <li>Cafeteira, liquidificador e sanduicheira</li>
                 <li>Mesa para 6 lugares</li>
                 <li>Ar-condicionado</li>
                 <li>Aquecedor elétrico</li>
@@ -487,10 +491,12 @@
             </figure>
             <div class="cabin-body">
               <h3>Cabana Estrela</h3>
-              <p>Para até <strong>4 pessoas</strong>, com teto octogonal de madeira, <strong>cozinha equipada</strong> com fogão a gás de duas bocas e utensílios, e uma deliciosa <strong>banheira vitoriana de água aquecida</strong> em espaço reservado a céu aberto — banho de banheira olhando o céu da serra.</p>
+              <p>Para até <strong>4 pessoas</strong>, com teto octogonal de madeira, <strong>cozinha equipada</strong> com fogão a gás de duas bocas, geladeira, micro-ondas e utensílios, e uma deliciosa <strong>banheira vitoriana de água aquecida</strong> em espaço reservado a céu aberto — banho de banheira olhando o céu da serra.</p>
               <ul class="cabin-amenities" role="list">
                 <li>Até 4 pessoas</li>
                 <li>Cozinha com fogão a gás</li>
+                <li>Geladeira e micro-ondas</li>
+                <li>Cafeteira, liquidificador e sanduicheira</li>
                 <li>Banheira vitoriana</li>
                 <li>Água aquecida</li>
                 <li>Espaço a céu aberto</li>
@@ -611,6 +617,10 @@
           <div class="feature reveal">
             <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h20v10H2zM6 18h12M9 14v4m6-4v4"/></svg></span>
             <div><h3>Camas muito confortáveis</h3><p>Colchões e roupas de cama escolhidos para noites profundas de sono na serra.</p></div>
+          </div>
+          <div class="feature reveal" style="--reveal-delay: 30ms">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h16v18H4z"/><path d="M4 11h16"/><circle cx="8" cy="7" r="1"/><path d="M8 15v2"/></svg></span>
+            <div><h3>Cozinha nas duas cabanas</h3><p>Geladeira, micro-ondas, cafeteira, liquidificador, sanduicheira e utensílios — dá para preparar a própria refeição.</p></div>
           </div>
           <div class="feature reveal" style="--reveal-delay: 60ms">
             <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 21V9a4.5 4.5 0 0 1 9 0v1"/><path d="M5 21h9M12 6.5C10 5 7 5 5 6.5V21"/></svg></span>
@@ -889,7 +899,7 @@
           </details>
           <details class="faq-item">
             <summary>O que as cabanas oferecem?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
-            <p class="faq-body">A <strong>Cabana Lua</strong> recebe até 6 pessoas e tem cozinha completa, com fogão por indução, forno elétrico e copa/cozinha com mesa para seis lugares. A <strong>Cabana Estrela</strong> recebe até 4 pessoas e tem cozinha equipada com fogão a gás de duas bocas e utensílios, sem forno, e uma banheira vitoriana de água aquecida em espaço reservado a céu aberto. Ambas contam com ar-condicionado, aquecedor elétrico, camas muito confortáveis, torneiras aquecidas, Wi-Fi e banheiro privativo — e o quintal tem fogueira, pergolado com balanço e estacionamento gratuito.</p>
+            <p class="faq-body">A <strong>Cabana Lua</strong> recebe até 6 pessoas e tem cozinha completa, com fogão por indução, forno elétrico e copa/cozinha com mesa para seis lugares. A <strong>Cabana Estrela</strong> recebe até 4 pessoas e tem cozinha equipada com fogão a gás de duas bocas e utensílios, sem forno, e uma banheira vitoriana de água aquecida em espaço reservado a céu aberto. As duas têm geladeira, micro-ondas, cafeteira, liquidificador e sanduicheira, além de ar-condicionado, aquecedor elétrico, camas muito confortáveis, torneiras aquecidas, Wi-Fi e banheiro privativo — e o quintal tem fogueira, pergolado com balanço e estacionamento gratuito.</p>
           </details>
           <details class="faq-item">
             <summary>Como chego a Patrimônio da Penha?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
