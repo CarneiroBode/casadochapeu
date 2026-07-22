@@ -760,7 +760,6 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.place-card.featured { border-color: var(--amber); }
 .place-tag {
   font-size: .8125rem; font-weight: 600;
   letter-spacing: .08em; text-transform: uppercase;
