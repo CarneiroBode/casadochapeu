@@ -311,18 +311,7 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 .hero::after {
   content: ''; position: absolute; inset: 0; z-index: -1;
   background:
-    /* Reforço à esquerda: o texto ocupa esse terço e a foto do hero tem
-       áreas claras ali (porta, chão). Sem isso o branco perde contraste. */
-    linear-gradient(90deg, rgb(15 18 14 / .68) 0%, rgb(15 18 14 / .40) 38%, rgb(15 18 14 / 0) 68%),
     linear-gradient(180deg, rgb(15 18 14 / .42) 0%, rgb(15 18 14 / .12) 34%, rgb(15 18 14 / .58) 74%, rgb(15 18 14 / .82) 100%);
-}
-@media (max-width: 56em) {
-  /* Em telas estreitas o texto ocupa a largura toda — gradiente lateral
-     não ajuda, escurecimento uniforme sim. */
-  .hero::after {
-    background:
-      linear-gradient(180deg, rgb(15 18 14 / .55) 0%, rgb(15 18 14 / .38) 34%, rgb(15 18 14 / .66) 74%, rgb(15 18 14 / .86) 100%);
-  }
 }
 .hero-content {
   padding-block: clamp(6rem, 14vh, 9rem) clamp(3.5rem, 9vh, 6rem);
