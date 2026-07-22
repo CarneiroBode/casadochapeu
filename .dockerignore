@@ -8,6 +8,7 @@ Dockerfile
 node_modules/
 README.md
 MIGRACAO-SEO.md
+novoprojeto.md
 llms.txt.original.md
 .env*
 *.log
