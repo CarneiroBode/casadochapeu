@@ -313,6 +313,39 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   background:
     linear-gradient(180deg, rgb(15 18 14 / .42) 0%, rgb(15 18 14 / .12) 34%, rgb(15 18 14 / .58) 74%, rgb(15 18 14 / .82) 100%);
 }
+/* A parede de tijolo aparente cria um padrão quadriculado bem atrás do
+   texto. Esta camada desfoca só essa faixa — a textura continua nítida no
+   resto da foto, mas para de competir com a leitura. A máscara faz o
+   efeito morrer suavemente nas bordas, sem deixar recorte visível. */
+.hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  backdrop-filter: blur(7px) saturate(.92);
+  -webkit-backdrop-filter: blur(7px) saturate(.92);
+  background: rgb(15 18 14 / .16);
+  mask-image:
+    linear-gradient(180deg, transparent 0%, #000 26%, #000 88%, transparent 100%),
+    linear-gradient(90deg, #000 0%, #000 42%, transparent 72%);
+  mask-composite: intersect;
+  -webkit-mask-image:
+    linear-gradient(180deg, transparent 0%, #000 26%, #000 88%, transparent 100%),
+    linear-gradient(90deg, #000 0%, #000 42%, transparent 72%);
+  -webkit-mask-composite: source-in;
+  pointer-events: none;
+}
+@media (max-width: 56em) {
+  /* No mobile o texto ocupa a largura toda: sem recorte lateral. */
+  .hero::before {
+    mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 90%, transparent 100%);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  /* Sem blur: cai para escurecimento simples, que garante o mesmo contraste. */
+  .hero::before {
+    backdrop-filter: none; -webkit-backdrop-filter: none;
+    background: rgb(15 18 14 / .34);
+  }
+}
 .hero-content {
   padding-block: clamp(6rem, 14vh, 9rem) clamp(3.5rem, 9vh, 6rem);
   max-width: 44rem;
