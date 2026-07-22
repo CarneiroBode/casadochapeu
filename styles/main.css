@@ -775,6 +775,16 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   color: var(--heading);
   margin-bottom: .5rem;
 }
+.place-hours {
+  margin-top: .85rem;
+  padding-top: .85rem;
+  border-top: 1px solid var(--border);
+  font-size: .9rem;
+  line-height: 1.7;
+}
+.place-hours strong { color: var(--heading); font-weight: 600; }
+.place-hours a { color: var(--brick); text-decoration: none; }
+.place-hours a:hover, .place-hours a:focus-visible { text-decoration: underline; }
 .place-link {
   margin-top: auto; padding-top: 1rem;
   font-size: .925rem; font-weight: 500;
@@ -797,6 +807,16 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
     margin-bottom: .7rem;
   }
 }
+.places-note {
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+  padding: 1.1rem 1.3rem;
+  background: var(--surface);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius-sm);
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+.places-note strong { color: var(--heading); font-weight: 600; }
 .places-disclaimer {
   margin-top: 1.75rem;
   font-size: .9rem;
