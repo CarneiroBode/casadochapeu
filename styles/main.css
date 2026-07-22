@@ -717,7 +717,7 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   display: grid; gap: clamp(1.25rem, 3vw, 2rem);
   grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: 48em) { .routes { grid-template-columns: 1fr; } }
+@media (max-width: 56em) { .routes { grid-template-columns: 1fr; gap: 1.1rem; } }
 .route-card {
   padding: clamp(1.5rem, 3vw, 2rem);
   background: var(--surface);
@@ -747,7 +747,11 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   display: grid; gap: clamp(1.25rem, 3vw, 1.75rem);
   grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: 48em) { .places { grid-template-columns: 1fr; } }
+/* 56em é o breakpoint do resto da página. Com 48em os cards ficavam em
+   duas colunas espremidas na faixa de tablet/celular deitado. */
+@media (max-width: 56em) {
+  .places { grid-template-columns: 1fr; gap: 1.1rem; }
+}
 .place-card {
   display: flex; flex-direction: column;
   padding: clamp(1.5rem, 3vw, 1.9rem);
@@ -779,6 +783,20 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   word-break: break-word;
 }
 .place-link:hover, .place-link:focus-visible { text-decoration: underline; }
+@media (max-width: 34em) {
+  /* Em tela estreita os cards ficam empilhados e um "cola" no outro.
+     Sombra e cabeçalho mais marcados dão limite claro entre eles. */
+  .place-card, .route-card { box-shadow: var(--shadow-lift); }
+  .place-card h3, .route-card h3 { font-size: 1.2rem; }
+  .place-tag, .route-tag {
+    display: inline-block;
+    padding: .25rem .6rem;
+    background: color-mix(in srgb, var(--brick) 12%, transparent);
+    border-radius: 999px;
+    font-size: .75rem;
+    margin-bottom: .7rem;
+  }
+}
 .places-disclaimer {
   margin-top: 1.75rem;
   font-size: .9rem;
