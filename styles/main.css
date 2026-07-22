@@ -678,6 +678,42 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 }
 .map-frame iframe { width: 100%; height: 100%; border: 0; }
 
+/* ---------- Como chegar ---------- */
+.routes {
+  display: grid; gap: clamp(1.25rem, 3vw, 2rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 48em) { .routes { grid-template-columns: 1fr; } }
+.route-card {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.route-tag {
+  font-size: .8125rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brick);
+  margin-bottom: .5rem;
+}
+.route-card h3 { font-size: 1.35rem; margin-bottom: .75rem; }
+.route-card p { color: var(--text-soft); line-height: 1.65; }
+.route-card p + p { margin-top: .75rem; }
+.route-card strong { color: var(--heading); font-weight: 600; }
+.route-note {
+  padding-top: .85rem;
+  border-top: 1px solid var(--border);
+  font-size: .925rem;
+}
+.routes-extra { margin-top: clamp(2rem, 4vw, 2.75rem); }
+.routes-disclaimer {
+  margin-top: 1.75rem;
+  font-size: .9rem;
+  color: var(--text-soft);
+  text-align: center;
+}
+
 /* ---------- Avaliações ---------- */
 .reviews { background: var(--forest-deep); color: #ece7da; }
 .reviews .section-head :is(h2) { color: #f6f1e4; }
