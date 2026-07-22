@@ -745,18 +745,6 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   word-break: break-word;
 }
 .place-link:hover, .place-link:focus-visible { text-decoration: underline; }
-.places-note {
-  margin-top: clamp(1.5rem, 3vw, 2rem);
-  padding: 1.1rem 1.3rem;
-  background: var(--surface);
-  border-left: 3px solid var(--amber);
-  border-radius: var(--radius-sm);
-  color: var(--text-soft);
-  line-height: 1.65;
-}
-.places-note strong { color: var(--heading); font-weight: 600; }
-.places-extra { margin-top: clamp(1.5rem, 3vw, 2rem); }
-.places-extra a { color: var(--brick); }
 .places-disclaimer {
   margin-top: 1.75rem;
   font-size: .9rem;
