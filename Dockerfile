@@ -4,7 +4,7 @@ FROM nginxinc/nginx-unprivileged:1.27-alpine
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --chown=nginx:nginx index.html robots.txt sitemap.xml site.webmanifest llms.txt /usr/share/nginx/html/
+COPY --chown=nginx:nginx index.html robots.txt sitemap.xml site.webmanifest llms.txt favicon.ico /usr/share/nginx/html/
 COPY --chown=nginx:nginx assets/ /usr/share/nginx/html/assets/
 COPY --chown=nginx:nginx styles/ /usr/share/nginx/html/styles/
 COPY --chown=nginx:nginx lib/   /usr/share/nginx/html/lib/
