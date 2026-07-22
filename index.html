@@ -46,6 +46,9 @@
   <!-- Performance: preloads -->
   <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- A itálica é usada no <em> do h1 do hero. Sem preload ela só é descoberta
+       após o parse do CSS, virando o último elo da cadeia crítica. -->
+  <link rel="preload" href="assets/fonts/fraunces-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/images/hero-entrada-cabana-lua-1280.webp" imagesrcset="assets/images/hero-entrada-cabana-lua-mobile-828.webp 828w, assets/images/hero-entrada-cabana-lua-1280.webp 1280w, assets/images/hero-entrada-cabana-lua-1920.webp 1920w, assets/images/hero-entrada-cabana-lua-2994.webp 2994w" imagesizes="100vw" fetchpriority="high">
 
   <link rel="stylesheet" href="styles/main.css">
@@ -282,7 +285,7 @@
 
   <!-- Loader -->
   <div class="page-loader" id="pageLoader" aria-hidden="true">
-    <img src="assets/images/favicon-192.png" alt="" width="74" height="74">
+    <img src="assets/images/loader-marca-148.webp" alt="" width="74" height="74" fetchpriority="low" decoding="async">
   </div>
 
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -394,7 +397,9 @@
             alt="Interior de cabana com teto de madeira em formato octogonal, cama de casal e janela aberta para o verde"
             loading="lazy" decoding="async">
           <img class="float"
-            src="assets/images/quintal-fogueira-noite-560.webp"
+            src="assets/images/quintal-fogueira-noite-340.webp"
+            srcset="assets/images/quintal-fogueira-noite-200.webp 200w, assets/images/quintal-fogueira-noite-340.webp 340w, assets/images/quintal-fogueira-noite-560.webp 560w"
+            sizes="(max-width: 56em) 40vw, 170px"
             width="562" height="548"
             alt="Quintal da Casa do Chapéu à noite, com fogueira acesa, lua cheia e as duas cabanas iluminadas"
             loading="lazy" decoding="async">
@@ -485,7 +490,7 @@
             <span>Banheira vitoriana · Cabana Estrela</span>
           </a>
           <a href="assets/images/cozinha-fogao-a-lenha-1600.webp" data-lightbox data-caption="Copa/cozinha da Cabana Lua — mesa para seis lugares e fogão a lenha">
-            <img src="assets/images/cozinha-fogao-a-lenha-800.webp" srcset="assets/images/cozinha-fogao-a-lenha-400.webp 400w, assets/images/cozinha-fogao-a-lenha-800.webp 800w, assets/images/cozinha-fogao-a-lenha-1600.webp 1600w" sizes="(max-width: 56em) 46vw, 24vw" width="4080" height="3060" alt="Copa e cozinha da Cabana Lua com fogão a lenha de tijolos e mesa de madeira para seis lugares" loading="lazy" decoding="async">
+            <img src="assets/images/cozinha-fogao-a-lenha-800.webp" srcset="assets/images/cozinha-fogao-a-lenha-400.webp 400w, assets/images/cozinha-fogao-a-lenha-800.webp 800w, assets/images/cozinha-fogao-a-lenha-1600.webp 1600w" sizes="(max-width: 56em) 46vw, 24vw" width="3060" height="4080" alt="Copa e cozinha da Cabana Lua com fogão a lenha de tijolos e mesa de madeira para seis lugares" loading="lazy" decoding="async">
             <span>Copa/cozinha · Cabana Lua</span>
           </a>
 
