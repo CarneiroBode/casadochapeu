@@ -707,6 +707,50 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   font-size: .925rem;
 }
 .routes-extra { margin-top: clamp(2rem, 4vw, 2.75rem); }
+
+/* ---------- Onde comer ---------- */
+.places {
+  display: grid; gap: clamp(1.25rem, 3vw, 1.75rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 48em) { .places { grid-template-columns: 1fr; } }
+.place-card {
+  display: flex; flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 1.9rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.place-card.featured { border-color: var(--amber); }
+.place-tag {
+  font-size: .8125rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brick);
+  margin-bottom: .5rem;
+}
+.place-card h3 { font-size: 1.3rem; margin-bottom: .6rem; }
+.place-card p { color: var(--text-soft); line-height: 1.65; }
+.place-card strong { color: var(--heading); font-weight: 600; }
+.place-award {
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: .5rem;
+}
+.place-link {
+  margin-top: auto; padding-top: 1rem;
+  font-size: .925rem; font-weight: 500;
+  color: var(--brick);
+  text-decoration: none;
+  word-break: break-word;
+}
+.place-link:hover, .place-link:focus-visible { text-decoration: underline; }
+.places-disclaimer {
+  margin-top: 1.75rem;
+  font-size: .9rem;
+  color: var(--text-soft);
+  text-align: center;
+}
 .routes-disclaimer {
   margin-top: 1.75rem;
   font-size: .9rem;
