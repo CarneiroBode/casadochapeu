@@ -745,6 +745,8 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
   word-break: break-word;
 }
 .place-link:hover, .place-link:focus-visible { text-decoration: underline; }
+.places-extra { margin-top: clamp(1.5rem, 3vw, 2rem); }
+.places-extra a { color: var(--brick); }
 .places-disclaimer {
   margin-top: 1.75rem;
   font-size: .9rem;
