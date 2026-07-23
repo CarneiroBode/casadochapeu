@@ -850,6 +850,19 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 .g-stars { display: flex; gap: .15rem; color: var(--amber); }
 .g-score > span { font-size: .95rem; color: rgb(236 231 218 / .75); }
 
+.g-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+/* Botão primário: é a acao que queremos incentivar (mais avaliacoes). */
+.btn-google {
+  background: var(--amber); color: #2a1e0a;
+  box-shadow: 0 6px 18px -6px rgb(233 169 79 / .6);
+}
+.btn-google:hover { background: var(--amber-deep); color: #2a1e0a; }
+.btn-google svg { fill: currentColor; stroke: none; }
+@media (max-width: 34em) {
+  .g-actions { width: 100%; }
+  .g-actions .btn { flex: 1 1 100%; }
+}
+
 .review-grid {
   display: flex; flex-wrap: wrap; justify-content: center;
   gap: 1.5rem;
