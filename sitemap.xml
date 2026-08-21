@@ -68,4 +68,40 @@
       <image:caption>Cabanas ecológicas aos pés do Parque Nacional do Caparaó</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://www.casadochapeucaparao.com/o-que-fazer-no-caparao.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/aerea-cachoeira-1600.webp</image:loc>
+      <image:title>Vista aérea de cachoeira no Caparaó</image:title>
+      <image:caption>Cachoeira cercada pela mata atlântica densa em Patrimônio da Penha</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.casadochapeucaparao.com/cachoeiras-caparao.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/cachoeira-frontal-1600.webp</image:loc>
+      <image:title>Cachoeira em Patrimônio da Penha, Caparaó</image:title>
+      <image:caption>Queda d'água caindo sobre paredão de pedra em meio à mata</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.casadochapeucaparao.com/trilha-pico-da-bandeira.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/guia-local-cruzeiro-pico-bandeira-1200.webp</image:loc>
+      <image:title>Cruzeiro no cume do Pico da Bandeira</image:title>
+      <image:caption>Vista do cume acima do mar de nuvens, no Parque Nacional do Caparaó</image:caption>
+    </image:image>
+  </url>
 </urlset>

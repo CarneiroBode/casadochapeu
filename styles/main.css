@@ -759,6 +759,22 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
 }
 .routes-extra { margin-top: clamp(2rem, 4vw, 2.75rem); }
 
+/* ---------- Trilha numerada (sequência de cachoeiras, etapas) ---------- */
+.trail-list { display: grid; gap: 1.5rem; max-width: 46rem; margin-inline: auto; list-style: none; padding: 0; }
+.trail-step { display: flex; gap: 1.1rem; align-items: flex-start; }
+.trail-step-index {
+  flex: none;
+  display: grid; place-items: center;
+  width: 2.4rem; height: 2.4rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--amber) 16%, transparent);
+  color: var(--brick);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.trail-step h3 { font-size: 1.15rem; color: var(--heading); }
+.trail-step p { margin-top: .3rem; color: var(--text-soft); line-height: 1.6; font-size: .95rem; }
+
 /* ---------- Onde comer ---------- */
 .places {
   display: grid; gap: clamp(1.25rem, 3vw, 1.75rem);
