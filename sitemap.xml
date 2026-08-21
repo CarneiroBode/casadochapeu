@@ -104,4 +104,16 @@
       <image:caption>Vista do cume acima do mar de nuvens, no Parque Nacional do Caparaó</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://www.casadochapeucaparao.com/guia-turistico-caparao.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.casadochapeucaparao.com/assets/images/guia-local-patrick-cume-1600.webp</image:loc>
+      <image:title>Patrick, condutor da Bicho Grilo Expedições, no Caparaó</image:title>
+      <image:caption>Guia certificado observando a Serra do Caparaó do alto de um mirante</image:caption>
+    </image:image>
+  </url>
 </urlset>
